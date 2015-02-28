@@ -382,6 +382,7 @@ var _              = require('lodash'),
                     options: {
                         templateBasePath: /core\/client\//,
                         templateFileExtensions: /\.hbs/,
+                        templateNamespace: 'Handlebars',
                         templateRegistration: function (name, template) {
                             return grunt.config.process('define(\'ghost/') +
                                 name + '\', [\'exports\'], function(__exports__){ __exports__[\'default\'] = ' +
@@ -397,6 +398,7 @@ var _              = require('lodash'),
                     options: {
                         templateBasePath: /core\/client\//,
                         templateFileExtensions: /\.hbs/,
+                        templateNamespace: 'Handlebars',
                         templateRegistration: function (name, template) {
                             return grunt.config.process('define(\'ghost/') +
                                 name + '\', [\'exports\'], function(__exports__){ __exports__[\'default\'] = ' +
