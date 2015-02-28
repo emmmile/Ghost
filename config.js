@@ -3,7 +3,7 @@
 // Documentation can be found at http://support.ghost.org/config/
 
 var port = 8080
-var finalUri = 'http://95.215.47.100' + port
+var finalUri = 'http://95.215.47.100' + ':' + port
 
 var path = require('path'),
     config;
